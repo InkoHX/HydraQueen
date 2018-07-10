@@ -1,0 +1,2 @@
+# GENESYS
+GENERALボットの新バージョン
