@@ -1,2 +1,1 @@
-# GENESYS
-GENERALボットの新バージョン
+# HydraQueen
