@@ -1,0 +1,32 @@
+{
+  "name": "hydraqueen",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "tsc -p .",
+    "watch": "tsc -w -p .",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "lint:fix": "tslint -c tslint.json 'src/**/*.ts' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InkoHX/HydraQueen.git"
+  },
+  "author": "InkoHX (inkohx@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InkoHX/HydraQueen/issues"
+  },
+  "homepage": "https://github.com/InkoHX/HydraQueen#readme",
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^12.6.2",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.0.0"
+  }
+}
