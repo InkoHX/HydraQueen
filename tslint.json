@@ -3,5 +3,7 @@
     "extends": [
         "tslint:recommended"
     ],
-    "rules": {}
+    "rules": {
+        "curly": false
+    }
 }
