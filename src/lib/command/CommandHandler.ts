@@ -1,6 +1,8 @@
 import { Message } from "discord.js";
 import { HydraQueen } from "..";
 
+// TODO: この雑な部分はあとでなんとかします。
+
 export default (message: Message, client: HydraQueen): void => {
   if (message.author.bot || message.system) return;
   if (message.webhookID) return;
