@@ -1,9 +1,9 @@
-import Command from "./command/Command";
-import Event from "./event/Event";
-import HydraQueen from "./HydraQueen";
+import Command from './command/Command'
+import Event from './event/Event'
+import HydraQueen from './HydraQueen'
 
 export {
   Command,
   HydraQueen,
-  Event,
-};
+  Event
+}
