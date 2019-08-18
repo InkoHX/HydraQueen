@@ -1,18 +1,18 @@
 import { Client, ClientOptions } from 'discord.js'
 import CommandMap from './command/CommandMap'
-import EventMap from './event/EventMap'
+import HydraLogger from './utils/HydraLogger'
 
 class HydraQueen extends Client {
   public commands: CommandMap;
 
-  public events: EventMap;
+  public logger: HydraLogger;
 
   constructor (options?: ClientOptions) {
     super(options)
 
     this.commands = new CommandMap()
 
-    this.events = new EventMap(this)
+    this.logger = new HydraLogger()
   }
 }
 
