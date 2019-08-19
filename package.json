@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "compile": "tsc -p .",
+    "compile:test": "tsc -p . --noEmit",
     "watch": "tsc -w -p .",
     "lint": "eslint --ext .ts --ignore-path .gitignore ./src",
     "lint:fix": "eslint --ext .ts --ignore-path .gitignore ./src --fix"
