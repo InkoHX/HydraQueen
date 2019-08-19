@@ -1,5 +1,5 @@
-import Command from './command/Command'
-import Event from './event/Event'
+import Command from './structures/Command'
+import Event from './structures/Event'
 import HydraQueen from './HydraQueen'
 
 export {
