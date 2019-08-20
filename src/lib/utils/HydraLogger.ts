@@ -13,7 +13,11 @@ export default class HydraLogger {
     console.log(`${chalk.bgCyan(this.timestamp)} ${chalk.white(String(message))}`)
   }
 
+  public warn (message: any): void {
+    console.log(`${chalk.bgYellow(this.timestamp)} ${chalk.yellow(String(message))}`)
+  }
+
   public error (message: any): void {
-    console.error(`${chalk.bgRed(this.timestamp)} ${chalk.bold.red(String(message))}`)
+    console.info(`${chalk.bgRed(this.timestamp)} ${chalk.bold.red(String(message))}`)
   }
 }
