@@ -3,10 +3,10 @@ import moment from 'moment'
 import chalk from 'chalk'
 
 export default class HydraLogger {
-  public timestamp: string;
+  public readonly timestamp: string;
 
   constructor () {
-    this.timestamp = `[${moment().format('YYYY:MM:DD | HH:mm:ss')}]`
+    this.timestamp = `[${moment().format('YYYY/MM/DD | HH:mm:ss')}]`
   }
 
   public log (message: any): void {
