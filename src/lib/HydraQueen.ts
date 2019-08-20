@@ -21,10 +21,15 @@ export default class HydraQueen extends Client {
   }
 
   public async login (token?: string): Promise<string> {
+    await this.initEvents()
+
+    return super.login(token)
+  }
+
+  private async initEvents (): Promise<void> {
     for (const event of this.events.getEvents()) {
       await event._run()
     }
-
-    return super.login(token)
+    this.logger.log(`All events have been registered. (${this.events.store.size} events)`)
   }
 }
