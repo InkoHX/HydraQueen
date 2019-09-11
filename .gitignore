@@ -62,3 +62,6 @@ typings/
 
 # TypeScript output files.
 dist/
+
+# HydraBot config
+hydra-config.yml
