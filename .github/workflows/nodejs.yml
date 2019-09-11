@@ -4,21 +4,16 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [10]
-
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js v10
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
-    - name: yarn install, build, and test
-      run: |
-        yarn install
-        yarn run lint
-        yarn run compile:test
+        node-version: 10
+    - name: yarn install
+      run: yarn install
+    - name: Linting
+      run: yarn run lint
+    - name: Compile
+      run: yarn run compile:test
