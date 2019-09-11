@@ -11,7 +11,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 10
-    - name: yarn install
+    - name: Install
       run: yarn install
     - name: Linting
       run: yarn run lint
