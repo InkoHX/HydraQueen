@@ -4,8 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "start": "node ./dist/HydraQueenBot.js",
-    "start:dev": "ts-node ./src/HydraQueenBot.ts",
+    "start": "node ./dist/HydraBot.js",
+    "start:dev": "ts-node ./src/HydraBot.ts",
     "compile": "tsc -p .",
     "compile:test": "tsc -p . --noEmit",
     "watch": "tsc -w -p .",
