@@ -15,6 +15,7 @@ export default class HydraClient extends Client {
   public readonly commands: CommandStore
   public readonly events: EventStore
   public readonly logger: HydraLogger
+  public settings?: HydraConfig
 
   constructor (options?: ClientOptions) {
     super(options)
@@ -28,6 +29,7 @@ export default class HydraClient extends Client {
 
   public async login (token?: string): Promise<string> {
     const config = await this.loadConfig()
+    this.settings = config
     this.registerEvents()
 
     return super.login(config.token || token)
