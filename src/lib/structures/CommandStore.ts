@@ -1,8 +1,8 @@
 import { Collection } from 'discord.js'
-import BaseCommand from './base/BaseCommand'
+import Command from './Command'
 
-export default class CommandStore extends Collection<string, BaseCommand> {
-  public add (command: BaseCommand): this {
+export default class CommandStore extends Collection<string, Command> {
+  public add (command: Command): this {
     this.set(command.name, command)
 
     return this

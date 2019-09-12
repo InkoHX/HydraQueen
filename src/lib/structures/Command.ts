@@ -1,5 +1,5 @@
 import { Message } from 'discord.js'
-import HydraClient from '../../HydraClient';
+import HydraClient from '../HydraClient'
 
 export interface CommandOptions {
   name: string
