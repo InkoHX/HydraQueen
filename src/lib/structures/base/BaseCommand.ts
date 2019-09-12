@@ -1,4 +1,5 @@
-import { Message, Client } from 'discord.js'
+import { Message } from 'discord.js'
+import HydraClient from '../../HydraClient';
 
 export interface CommandOptions {
   name: string
@@ -6,7 +7,7 @@ export interface CommandOptions {
 }
 
 export default abstract class BaseCommand {
-  client: Client;
+  client: HydraClient;
   name: string;
   tag: string[];
 
@@ -15,9 +16,8 @@ export default abstract class BaseCommand {
    * @param client Discord Client
    * @param options Command Options
    */
-  constructor (client: Client, options: CommandOptions) {
+  constructor (client: HydraClient, options: CommandOptions) {
     this.client = client
-
     this.name = options.name
     this.tag = options.tag
   }
