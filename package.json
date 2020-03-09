@@ -37,7 +37,7 @@
     "@types/moment": "^2.13.0",
     "@types/node": "^12.7.5",
     "@types/ws": "^6.0.3",
-    "@typescript-eslint/eslint-plugin": "^2.2.0",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
     "@typescript-eslint/parser": "^2.2.0",
     "eslint": "^6.3.0",
     "eslint-config-standard": "^14.1.0",
